@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+table,th,td {
+outline-style:single;
+border: 1px solid black;
+outline-width: medium;
+border-collapse: collapse;
+   width:25%;
+  
+ }
+</style>
+</head>
+
+<body>
+<h3>Marks Table</h3>
+<table>
+ 
+  <tr>
+ <td><b>subject</b></td>
+    <td>MPI</td>
+    <td>orcs</td>
+    <td>es</td>
+    <td>cn</td>
+    <td>sup</td>
+<td>total</td>
+    <td>avg</td>
+  </tr>
+  <tr>
+<td><b>marks</b></td> 
+    <td>85</td>
+    <td>93</td>
+    <td>90</td>
+    <td>94</td>
+    <td>70</td>
+    <td id="Total"></td>
+    <td id="aveg"></td>
+
+</tr>
+ 
+</table>
+<script>
+var x=[85,93,90,94,94,70];
+var total,avg;
+total=x[0]+x[1]+x[2]+x[3]+x[4];
+avg=total/2;
+document.getElementById("Total").innerHTML=total;
+document.getElementById("aveg").innerHTML=avg;
+</script>
+
+
+</body>
+</html>
+
+
+
