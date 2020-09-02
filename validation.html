@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>registration page</title>
+</head>
+<body>
+<form>
+<table>
+<tr>
+<td><b>First Name:</b></td>
+<td><input class:"s" type="text" name="FirstName" id="FirstName" maxlength="50" />
+
+</td>
+</tr>
+
+
+<tr>
+<td><b>Phone No:</b></td>
+<td>
+<input type="text" id="ph" name="MobileNumber" maxlength="10"/>
+</td>
+</tr>
+
+<tr>
+<td><b>Gender:</b></td>
+<td>
+<input type="radio" name="Gender" value="Male" />
+Male
+<input type="radio" name="Gender" value="Female" />
+Female
+<input type="radio" name="Gender" value="other" />
+Other
+</td>
+</tr>
+
+
+<tr>
+<td><b>Reason for RDIP:</b></td>
+<td>
+<input type="checkbox" name="sub" id="sub" value="HTML" required />
+HTML
+<input type="checkbox" name="sub" id="sub" value="CSS" />
+CSS
+<input type="checkbox" name="sub" id="sub" value="JavaScript" />
+Javascript
+</td>
+</tr>
+<tr>
+<td><b>College:</b></td>
+<td><input type="text" name="college" id="college" maxlength="50" /></td>
+</tr>
+
+<tr><td><input type="button" value="Submit" method="post" onclick="Val()"/></td>
+<td><button type="reset" value="Reset">Reset</button></td>
+</tr>
+</table>
+</form> 
+<script>
+    function Val() {
+        var letter =  /^[0-9]+$/;
+        var isValid = letter.test(document.getElementById("ph").value);
+        if (!isValid) {
+            alert("Should contain only numbers");
+        }
+    var checkboxs=document.getElementsByName("sub");
+    var okay=false;
+    for(var i=0,l=checkboxs.length;i<l;i++)
+    {
+        if(checkboxs[i].checked)
+        {
+            okay=true;
+            break;
+        }
+    }
+    if(okay){
+}
+    else alert("Please check a checkbox");
+}
+    
+
+</script>
+</body>
+</html>
