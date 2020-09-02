@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>registration page</title>
+</head>
+<body>
+<form>
+<table>
+<tr>
+<td><b>First Name:</b></td>
+<td><input class:"s" type="text" id="Name" name="FirstName" id="FirstName" maxlength="50" />
+
+</td>
+</tr>
+
+<tr>
+<td><b>Email:</b></td>
+<td><input type="email" name="EmailID" id="EmailID" maxlength="100"/></td>
+</tr>
+
+<tr>
+<td><b>Phone No:</b></td>
+<td>
+<input type="text" name="MobileNumber" maxlength="10"/>
+</td>
+</tr>
+
+<tr>
+<td><b>Gender:</b></td>
+<td>
+<input type="radio" name="Gender" value="Male" />
+Male
+<input type="radio" name="Gender" value="Female" />
+Female
+<input type="radio" name="Gender" value="other" />
+Other
+</td>
+</tr>
+
+
+<tr>
+<td><b>Reason for RDIP:</b></td>
+<td>
+<input type="checkbox" name="sub" value="HTML" />
+HTML
+<input type="checkbox" name="sub" value="CSS" />
+CSS
+<input type="checkbox" name="sub" value="JavaScript" />
+Javascript
+</td>
+</tr>
+<tr>
+<td><b>College:</b></td>
+<td><input type="text" name="college" id="college" maxlength="50" /></td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="declare" value="declare" />
+<td><b>I declare above details given by me are true.</b></td></tr>
+<tr><td><input type="button" value="Submit" onclick="Val()"/></td>
+<td><button type="reset" value="Reset">Reset</button></td>
+</tr>
+</table>
+</form> 
+<script type="text/javascript">
+    function Val() {
+        var letter =  /^[A-Za-z]+$/;
+        var isValid = letter.test(document.getElementById("Name").value);
+        if (!isValid) {
+            alert("Only Alphabets are allowed in Name.");
+        }
+ 
+        return isValid;
+    }
+</script>
+</body>
+</html>
