@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>input a number between 5-10:</p>
+
+<input id="test" type="text">
+<button type="button" onclick="myFunction()">Test</button>
+
+<p id="a"></p>
+
+<script>
+function myFunction() {
+  var m, x;
+  m = document.getElementById("a");
+  m.innerHTML = "";
+  x = document.getElementById("test").value;
+  try { 
+    if(x == "")  throw "is empty";
+    if(isNaN(x)) throw "is not a number";
+    x = Number(x);
+    if(x > 10)   throw "larger number than specified";
+    if(x < 5)  throw "smaller number than specified";
+  }
+  catch(err) {
+    m.innerHTML = "Input " + err;
+  }
+  finally {
+    document.getElementById("test").value = "";
+  }
+}
+</script>
+
+</body>
+</html>
