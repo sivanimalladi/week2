@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+    <title> 
+       hide or dispaly
+    </title> 
+
+    <style> 
+            .display{ 
+            height: 100px; 
+            width: 350px; 
+   
+}
+    </style> 
+</head> 
+
+<body> 
+        <div class="display"> 
+            <h1>Hide or Display<h1><h2>Digital Internship iiit</h2> 
+        </div> 
+
+        <p> 
+            plz check on hide and Display buttons inorder to see or not.
+        </p> 
+
+        <button onclick="eledisplay()"> 
+            Display
+        </button> 
+
+        <button onclick="elehide()"> 
+            Hide 
+        </button> 
+
+    <script type="text/javascript"> 
+        function eledisplay() { 
+            element = document.querySelector('.display'); 
+             element.style.visibility = 'visible';
+        } 
+
+        function elehide() { 
+            element = document.querySelector('.display'); 
+            element.style.visibility = 'hidden'; 
+        } 
+    </script> 
+</body> 
+
+</html>
