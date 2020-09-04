@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.divClass2
+{
+   
+    border:solid 2px;
+padding:5px;
+    text-align:right;
+    background-color:pink;
+}
+        div { 
+            display: block; 
+            width: 300px; 
+            padding: 10px; 
+            font-size: 20px; 
+            border: 2px solid pink; 
+        } 
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#f1").fadeOut();
+    $("#f2").fadeOut("slow");
+    $("#f3").fadeOut(3000);
+  });
+});
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#f1").fadeIn();
+    $("#f2").fadeIn("slow");
+    $("#f3").fadeIn(3000);
+  });
+});
+ 
+$(document).ready(function(){
+  $("div").dblclick(function(){
+    $( this ).toggleClass("divClass2");
+  });
+});
+</script>
+
+</head>
+<body>
+
+<p>fadein ,fadeout ,double click,toggle to show and hide</p>
+
+<button>fade out</button>
+<button>fade in</button><br><br>
+<pre>
+<div id="f1" style="width:180px;height:100px;background-color:pink;"></div>
+<div id="f2" style="width:180px;height:100px;background-color:skyblue;"></div>
+<div id="f3" style="width:180px;height:100px;background-color:blue;"></div></pre><br><br>
+ 
+  
+
+<div class="divClass2">double click</div><br><br>
+<script> 
+        $(document).ready(function() { 
+            $("button").click(function() { 
+                $("#t").toggle(); 
+            }); 
+        }); 
+    </script> 
+ <div id="t">TOGGLE</div> <br>
+  
+    <button>Click to toggle</button> 
+  
+
+</body>
+</html>
