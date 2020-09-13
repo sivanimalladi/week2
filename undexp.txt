@@ -1,0 +1,9 @@
+In this experiment i understood:
+*There are different buttons with images and lables :INTRODUCTION,THEORY,OBJECTIVE,EXPERIMENT,QUIZZES,PROCEDURE.
+*If we click on INTRODUCTION we get some matter related to introduction.
+*As same on clicking  THEORY  and OBJECTIVE we will get some matter related to that.
+*On clicking EXPERIMENT we will get and select box with an options of language selection:english and hindi.
+*after selecting language for example:english we will get some random buttons of words and with these random bottons of words we have to make a sentence.
+*there is a button for reforming the sentence:Re-form the sentence and a button to check the correct sentence:Check the correctness of this sentence.
+*Based on the selection of random words in order to make a sentence ,output will be printed weather it is correct or wrong on clicking check the correctness of this sentencs button.
+*In quizzes there are questions and opthions but there no such fuctionality to select the option and submitting it. 
